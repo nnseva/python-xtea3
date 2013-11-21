@@ -22,8 +22,8 @@ Code example:
     import xtea
     print xtea.decipher(xtea.encipher('Hello XTEA!','1234567890123456'),'1234567890123456')
     print xtea.decipher(xtea.encipher('Hello XTEA!','1234567890123456',algorithm=2),'1234567890123456',algorithm=2)
-    print xtea.decipher(xtea.encipher('Hello XTEA!','1234567890123456'*2,algorithm=3),'1234567890123456',algorithm=3)
-    print xtea.decipher(xtea.encipher('Hello XTEA!','1234567890123456'*2,algorithm=3,endian='>'),'1234567890123456',algorithm=3,endian='>')
+    print xtea.decipher(xtea.encipher('Hello XTEA!','1234567890123456'*2,algorithm=3),'1234567890123456'*2,algorithm=3)
+    print xtea.decipher(xtea.encipher('Hello XTEA!','1234567890123456'*2,algorithm=3,endian='>'),'1234567890123456'*2,algorithm=3,endian='>')
 
 See also docstrings of encipher/decipher functions.
 
