@@ -20,27 +20,4 @@ inline uint32_t rol(uint32_t base, uint32_t shift) {
         return res;
 }
 
-// TODO: little-endian only, endian is valuable while conversion!
-inline void xtea1_bencipher(unsigned int num_rounds, char *v, char *k) {
-    xtea1_encipher(num_rounds,(uint32_t *)(void *)v, (uint32_t const *)(void const *)k);
-}
-inline void xtea1_bdecipher(unsigned int num_rounds, char *v, char *k) {
-    xtea1_decipher(num_rounds,(uint32_t *)(void *)v, (uint32_t const *)(void const *)k);
-}
-
-inline void xtea2_bencipher(unsigned int num_rounds, char *v, char *k) {
-    xtea2_encipher(num_rounds,(uint32_t *)(void *)v, (uint32_t const *)(void const *)k);
-}
-inline void xtea2_bdecipher(unsigned int num_rounds, char *v, char *k) {
-    xtea2_decipher(num_rounds,(uint32_t *)(void *)v, (uint32_t const *)(void const *)k);
-}
-
-inline void xtea3_bencipher(unsigned int num_rounds, char *v, char *k) {
-    xtea3_encipher(num_rounds,(uint32_t *)(void *)v, (uint32_t const *)(void const *)k);
-}
-inline void xtea3_bdecipher(unsigned int num_rounds, char *v, char *k) {
-    xtea3_decipher(num_rounds,(uint32_t *)(void *)v, (uint32_t const *)(void const *)k);
-}
-
-
 #endif
