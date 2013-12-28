@@ -5,7 +5,7 @@
 void xtea3_encipher(unsigned int num_rounds,uint32_t *v, uint32_t const *k)
 {
         unsigned int i;
-        unsigned long a, b, c, d, sum=0, t,delta=0x9E3779B9;
+        uint32_t a, b, c, d, sum=0, t,delta=0x9E3779B9;
         sum = 0;
         a = v[0] + k[0];
         b = v[1] + k[1];
@@ -28,7 +28,7 @@ void xtea3_encipher(unsigned int num_rounds,uint32_t *v, uint32_t const *k)
 void xtea3_decipher(unsigned int num_rounds,uint32_t *v, uint32_t const *k)
 {
     unsigned int i;
-    unsigned long a, b, c, d, t,delta=0x9E3779B9,sum = delta * num_rounds;
+    uint32_t a, b, c, d, t,delta=0x9E3779B9,sum = delta * num_rounds;
         d = v[3] ^ k[7];
         c = v[2] ^ k[6];
         b = v[1] ^ k[5];

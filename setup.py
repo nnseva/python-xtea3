@@ -29,7 +29,7 @@ setup(
   author = "Vsevolod Novikov",
   author_email = "nnseva@gmail.com",
   url = "http://localhost",
-  version = "0.1",  
+  version = "0.2",  
   cmdclass = {"build_ext": build_ext},
   py_modules = py_modules,
   ext_modules = ext_modules,
